@@ -1,0 +1,21 @@
+# One of 'breaking', 'deprecation', 'new_component', 'enhancement', 'bug_fix'
+change_type: enhancement
+
+# The name of the component, e.g. receiver/prometheus
+component: extension
+
+# A brief description of the change. Surround your text with quotes ("")
+# if it contains special characters.
+short_description: Stabilize AddMetricsObserver in extension package
+
+# One or more tracking issues related to the change
+issues: []
+
+# (Optional) One or more lines of additional information to render under the primary note.
+# These lines will be padded with 2 spaces and then inserted directly into the changelog.
+# Use pipe (|) for multiline entries.
+additional_details: |
+  Stabilizes the `AddMetricsObserver` function in the extension package,
+  removing the `alpha` stability gate requirement. This aligns with the
+  stabilization effort across receiver, processor, connector, exporter,
+  and scraper packages.
