@@ -1,0 +1,24 @@
+# One of 'breaking', 'deprecation', 'new_component', 'enhancement', 'bug_fix'
+change_type: enhancement
+
+# The name of the component, e.g. receiver/prometheus
+component: scraper
+
+# A brief description of the change. Surround your text with quotes ("text") if it contains special characters.
+note: stabilize `scraper.AddMetricsObserver`
+
+# Mandatory: One or more tracking issues related to the change. You can use the PR number here if no issue exists.
+issues: [12345]
+
+# (Optional) One or more lines of additional information to render under the primary note.
+# These lines will be padded with 2 spaces and then inserted directly into the changelog.
+# Use pipe (|) for multiline entries.
+subtext: |
+  The `AddMetricsObserver` function in the scraper package is now stable and
+  no longer considered experimental. Users can rely on this API without
+  expecting breaking changes in future releases.
+
+# If your change doesn't affect end users or the exported elements of any package,
+# you should instead start your pull request title with [chore] or use the 'chore' change type.
+# One of 'alpha', 'beta', 'stable'
+change_status: stable
